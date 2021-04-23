@@ -26,8 +26,9 @@ function newItem(){
   // call deleteListItem on click (jQuery way of eventListeners)
  	crossOutButton.on('click', deleteListItem);
 
+  //deleteListItem removes the parent element of the selected item (in this case the crossOutButton);
   function deleteListItem(){
- 		li.addClass('delete');
+ 		$(this).parent().remove();
  	}
 
    $('#list').sortable();

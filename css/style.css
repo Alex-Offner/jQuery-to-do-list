@@ -48,10 +48,6 @@ li:hover{
   cursor: pointer;
  }
 
-.delete {
-	display: none;
-}
-
 li > crossOutButton {
 	background: none;
 	border: none;
